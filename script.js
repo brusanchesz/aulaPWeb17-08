@@ -74,8 +74,8 @@ do {
 
 //-------------------------------------------------------------------------------------
 
-//FUNÇÃO
-
+//FUNÇÃO-------------------------------------------------------------------------------
+let banco_dados
 //function nome (parametros) {codigos}
 
 function salvar (nome, idade){// ISSO É UMA FUNÇÃO VOID, QUE NAO TEM RETORNO, ELA ESTÁ VAZIA 
@@ -86,3 +86,40 @@ function salvar (nome, idade){// ISSO É UMA FUNÇÃO VOID, QUE NAO TEM RETORNO,
 salvar ("Ronan", 30)
 
 //STRING TEMPLATE, igual nesse template com o crase, sifrão e chaves 
+
+//FUNÇÃO------------------------------------------------------------------------------------
+
+let x = 10
+let y = 50
+
+function calculo(){ 
+    return (x+y)
+}
+
+console.log (calculo() *2)//para retornar corretamente a função
+
+
+//FUNÇÃO NOMEADA - é quando a função tem um nome----------------------------------------
+
+let x = 10
+let y = 50
+
+function soma(){
+    if(x<10){
+        return x+y
+    }else {
+        console.log(x+x)
+    }
+}
+
+let resultado = soma()
+console.log (resultado)
+
+//FUNÇÃO ANONIMA ----------------------------------------------------------
+
+//ESTRUTURA
+//Variavel = Parametros => Codigos
+
+let continha = (valor1, valor2) => {valor1+valor2} //Se for só um parametro nao precisa de parenteses, e se for apenas uma linha nao precisa de chaves
+
+console.log (continha(4,10))
